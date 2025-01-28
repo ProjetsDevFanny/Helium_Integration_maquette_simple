@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>People-Powered Networks</title>
+  <title>Helium TP2</title>
 </head>
 
 <body>
   <header>
-      <h3>Helium</h3>
       <nav>
+        <h3>Helium</h3>
         <ul>
           <li>5G</li>
           <li>Explorer</li>
@@ -20,30 +20,38 @@
   </header>
 
   <main>
-    <div class="tittle">
+    <div class="main-left">
+      <!-- "Div container": servira en CSS, pour centrer les éléments dans la "div main-left" -->
+      <div class="main-left-container">
       <h1>People-Powered Networks</h1>
         <h2>Start a Wireless Resolution</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus adipisci illo enim cupiditate aspernatur ad laboriosam assumenda voluptates.</p>
+      </div>
     </div>
-    <img src="./img/img_tech.png" alt="Image_technologique" width="40%">
+    <div class="main-right">
+      <img src="./img/modem.png" alt="Modem" id="modem" width="40%">
+    </div>
   </main>
 
   <footer>
-    <div class="footer_tittles">
+    <div class="footer_left">
       <h4>Core Technologies</h4>
+      <div class="btn-container">
+        <button>Tokens</button>
+        <button>Proof of Coverage</button>
+        <button>LongFi</button>
+      </div>
+    </div>
+    <div class="footer-right">
       <h4>Our Investors</h4>
-    </div>
-    <div class="technologies">
-      <ul>
-        <li>Tokens</li>
-        <li>Proof of Coverage</li>
-        <li>LongFi</li>
-      </ul>
-    </div>
-    <div class="logos">
-      <img src="./img/investlogo2blue_GV.png" alt="GV" width="10%">
-      <img src="./img/investlogo3blue_first.png" alt="FirstMark" width="10%">
-      <img src="./img/investlogo4blue_khosla.png" alt="Khosla_ventures" width="10%">
+      <div class="investors-logos">
+        <!-- servira en CSS, pour bien centrer le bloc "investors-containers" (Les 3 logos) dans le bloc "investors-logos" -->
+        <div class="investors-containers">
+          <img src="./img/investlogo2blue_GV.png" alt="GV" width="10%">
+          <img src="./img/investlogo3blue_first.png" alt="FirstMark" width="10%">
+          <img src="./img/investlogo4blue_khosla.png" alt="Khosla_ventures" width="10%">
+        </div>
+      </div>
     </div>
   </footer>
   
