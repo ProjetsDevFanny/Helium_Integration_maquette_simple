@@ -3,12 +3,11 @@
 /* GENERAL */
 
 :root {
-  --color1: #7847fe;
+  --color1: #373aff;
   /* Fond gris clair: */
-  --color2: #292929;
+  --color2: #1f1e1e;
   --color3: #fdfdfd;
   --color4: #0d0d0d;
-  --rem1: 
 }
 
 * {
@@ -23,7 +22,7 @@ height: 100vh;
 font-family: "Inter";
 font-style: normal;
 color: white;
-/* overflow: hidden; */
+overflow: hidden;
 }
 
 /* Menu de navigation: hearder */
@@ -31,7 +30,6 @@ color: white;
 nav {
   display: flex;
   align-content: center;
-  margin-bottom: 20px;
 }
 
 nav h3 {
@@ -51,6 +49,7 @@ nav ul {
 main {
   display: flex;
   align-items: center;
+  height: 75vh;
 }
 
 .main-left {
@@ -59,15 +58,15 @@ main {
 
 .main-left-container {
   width: 85%;
-
 }
+
 .main-left-container h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 600;
 }
 
 .main-left-container h2 {
-  font-size: 1.45rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: var(--color1);
   margin: 10px 0px;
@@ -86,10 +85,88 @@ line-height: 14px;
   
 .main-right {
   width: 50%;
+  text-align: center;
 }
 
 .main-right img {
-  width: 100%;
+  width: 72%;
+    
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  /* background: var(--color4); */
+  background: var(--color4);
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column; 
+}
+
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-container button {
+  background: var(--color1);
+  color: var(--color3);
+  height: 30px;
+  width: 90%;
+  border-radius: 10px;
+  font-family: "Inter";
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: none;
+  /* haut/bas dr/gche*/
+  margin: 3px 0px;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.footer-right h4 {
+  margin: 0px 60px;
+}
+
+.investors-logos {
+  height: 100%;
+}
+
+.investors-containers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 25px 0px 20px;
+  /* haut dr/gche bas */
+}
+
+.investors-containers img {
+  object-fit: cover;
+}
+
+#GV {
+  width: 7%;
+}
+
+#First {
+  width: 13%;
+}
+#Khosla {
+  width: 9%;
 }
 
 
