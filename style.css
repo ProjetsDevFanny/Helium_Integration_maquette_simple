@@ -2,31 +2,44 @@
 
 /* GENERAL */
 
+/* Palette de couleurs: */
 :root {
-  --color1: #373aff;
+  --color1: #474dff;
   /* Fond gris clair: */
   --color2: #1f1e1e;
-  --color3: #fdfdfd;
-  --color4: #0d0d0d;
+  --color3: #f0eeee;
+  /* background du footer: */
+  --color4: #070707;
 }
 
 * {
-  margin: 5px 4px;
-  padding: 0;
+ /* Chacun des éléments de la page ont un padding de 5px ! et on ne pourra pas le changer ! */
+  padding: 5px;
+  margin: 0px ;
+  /* Pour éviter que les boîtes partent dans tous les sens: */
   box-sizing: border-box;
+  /* On met la font dans le * : et sans-serif par défaut si ca ne marche pas. */
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 0.7rem;
 }
 
 body {
 background-color: var(--color2);
-height: 100vh;
-font-family: "Inter";
-font-style: normal;
-color: white;
-overflow: hidden;
+min-height: 100vh;
+color: var(--color3);
+/* overflow: hidden; */
 }
 
 /* Menu de navigation: hearder */
-
 nav {
   display: flex;
   align-content: center;
@@ -39,7 +52,6 @@ nav h3 {
 nav ul {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   width: 50%;
   font-size: 0.8rem;
 }
@@ -49,10 +61,12 @@ nav ul {
 main {
   display: flex;
   align-items: center;
-  height: 75vh;
+  height: 74vh;
 }
 
 .main-left {
+  /* display: flex;
+  justify-content: space-around; */
   width: 50%;
 }
 
@@ -73,14 +87,15 @@ main {
 }
 
 .main-left-container p {
-display: -webkit-box;
+  /* Si on veut que le paragraphe face max 2 lignes tout le temps: */
+/* display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
 line-clamp: 2;
-overflow: hidden;
+overflow: hidden; */
 text-align: justify;
-font-size: 0.7rem;
 line-height: 14px;
+max-width: 700px;
 }
   
 .main-right {
@@ -101,14 +116,13 @@ footer {
   /* background: var(--color4); */
   background: var(--color4);
   border-radius: 15px;
-  padding: 5px;
+  min-height: 18vh;
 }
 
 .footer-left {
   display: flex;
   flex-direction: column; 
 }
-
 
 .btn-container {
   display: flex;
@@ -120,14 +134,14 @@ footer {
   background: var(--color1);
   color: var(--color3);
   height: 30px;
-  width: 90%;
+  width: 140px;
+  letter-spacing: 0.8px;
   border-radius: 10px;
-  font-family: "Inter";
   font-size: 0.7rem;
   font-weight: 600;
   border: none;
   /* haut/bas dr/gche*/
-  margin: 3px 0px;
+  margin: 5px 0px;
   text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
   cursor: pointer;
 }
@@ -135,7 +149,7 @@ footer {
 .footer-right {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 67%;
 }
 
 .footer-right h4 {
@@ -149,9 +163,10 @@ footer {
 .investors-containers {
   display: flex;
   justify-content: space-around;
+  /* Permet de voir l'img en entier: */
   align-items: center;
-  margin: 25px 0px 20px;
-  /* haut dr/gche bas */
+  width: 100%;
+  height: 100%;
 }
 
 .investors-containers img {
