@@ -13,9 +13,9 @@
 }
 
 * {
- /* Chacun des éléments de la page ont un padding de 5px ! et on ne pourra pas le changer ! */
+  /* Chacun des éléments de la page ont un padding de 5px ! et on ne pourra pas le changer ! */
   padding: 5px;
-  margin: 0px ;
+  margin: 0px;
   /* Pour éviter que les boîtes partent dans tous les sens: */
   box-sizing: border-box;
   /* On met la font dans le * : et sans-serif par défaut si ca ne marche pas. */
@@ -70,7 +70,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  height: 74vh;
+  min-height: 75vh;
 }
 
 .main-left {
@@ -99,16 +99,16 @@ main {
 
 .main-left-container p {
   /* Si on veut que le paragraphe face max 2 lignes tout le temps: */
-/* display: -webkit-box;
+  /* display: -webkit-box;
 -webkit-box-orient: vertical;
 -webkit-line-clamp: 2;
 line-clamp: 2;
 overflow: hidden; */
-text-align: justify;
-line-height: 14px;
-max-width: 700px;
+  text-align: justify;
+  line-height: 14px;
+  max-width: 700px;
 }
-  
+
 .main-right {
   display: grid;
   justify-content: center;
@@ -135,7 +135,6 @@ footer {
   align-items: center;
   background: var(--color4);
   border-radius: 15px;
-  min-height: 18vh;
 }
 
 .footer-left {
@@ -162,7 +161,7 @@ footer {
   border: none;
   /* haut/bas dr/gche*/
   margin: 5px 0px;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,rgba(255, 255, 255, 0.2) 0 0 12px,rgba(57, 31, 91, 0.6) 1px 1px 4px,rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px, rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px, rgba(57, 31, 91, 0.32) 4px 4px 16px;
   cursor: pointer;
 }
 
@@ -176,10 +175,6 @@ footer {
 
 .footer-right h4 {
   margin: 0px 60px;
-}
-
-.investors-logos {
-  height: 100%;
 }
 
 .investors-containers {
@@ -208,9 +203,76 @@ footer {
 #First {
   /* width: 13%; */
 }
+
 #Khosla {
   /* width: 9%; */
 }
 
+
+/* *********************MEDIA QUERIES********************************* */
+
+/* Mobile FIRST */
+
+@media screen and (max-width: 800px) {
+  nav ul {
+    justify-items: center;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .main-left-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-left-container h2 {
+    font-size: 1.2rem;
+  }
+
+  #modem {
+    width: 70%;
+    padding: 20px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .footer-left {
+    text-align: center;
+  }
+
+  .footer-right h4 {
+    text-align: center;
+    align-content: space-around;
+  }
+
+  .investors-containers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #GV {
+    width: 60%;
+  }
+
+  #First {
+    width: 100%;
+  }
+
+  #Khosla {
+    width: 70%;
+  }
+}
+
+/* --------------------------------------------------------------------- */
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .investors-containers img {
+    width: 60%;
+  }
+}
 
 
