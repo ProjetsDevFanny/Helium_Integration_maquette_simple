@@ -191,12 +191,12 @@ footer {
 }
 
 .investors-containers img {
-  width: 60%;
+  width: 15vh;
 }
 
 /* Pour règler les tailles des logos indépendemment :*/
 #GV {
-  /* width: 7%; */
+  width: 10vh;
 }
 
 #First {
@@ -222,6 +222,13 @@ footer {
   .main-left-container h2 {
     font-size: 1.4rem;
   }
+  .investors-containers img {
+    width: 10vh;
+  }
+  
+  #GV {
+    width: 7vh;
+  }
 }
 
 /* Maquette mobile: */
@@ -232,6 +239,7 @@ footer {
 
   main {
     grid-template-columns: 1fr;
+    /* OU : display: block; */
   }
 
   .main-left-container h1 {
@@ -255,11 +263,6 @@ footer {
   .footer-right h4 {
     text-align: center;
   }
-
-  .investors-containers {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
 }
 
 
