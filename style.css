@@ -191,12 +191,12 @@ footer {
 }
 
 .investors-containers img {
-  width: 15vh;
+  width: 65%;
 }
 
 /* Pour règler les tailles des logos indépendemment :*/
 #GV {
-  width: 10vh;
+  width: 55%;
 }
 
 #First {
@@ -221,13 +221,6 @@ footer {
   }
   .main-left-container h2 {
     font-size: 1.4rem;
-  }
-  .investors-containers img {
-    width: 10vh;
-  }
-  
-  #GV {
-    width: 7vh;
   }
 }
 
