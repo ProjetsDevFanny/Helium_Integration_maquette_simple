@@ -191,8 +191,7 @@ footer {
 }
 
 .investors-containers img {
-  object-fit: cover;
-  width: 35%;
+  width: 60%;
 }
 
 /* Pour règler les tailles des logos indépendemment :*/
@@ -211,9 +210,22 @@ footer {
 
 /* *********************MEDIA QUERIES********************************* */
 
-/* Mobile FIRST */
 
-@media screen and (max-width: 800px) {
+/* A savoir: tablette: entre 700 et 900px */
+/* Quand on fait du mobile FIRST: (min-width:...px) */
+
+/* Maquette IPad: */
+@media screen and (max-width: 850px) {
+  .main-left-container h1 {
+    font-size: 4rem;
+  }
+  .main-left-container h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Maquette mobile: */
+@media screen and (max-width: 590px) {
   nav ul {
     justify-items: center;
   }
@@ -230,11 +242,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  #modem {
-    width: 70%;
-    padding: 20px;
-  }
-
   footer {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -247,32 +254,14 @@ footer {
 
   .footer-right h4 {
     text-align: center;
-    align-content: space-around;
   }
 
   .investors-containers {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  #GV {
-    width: 60%;
-  }
-
-  #First {
-    width: 100%;
-  }
-
-  #Khosla {
-    width: 70%;
-  }
 }
 
-/* --------------------------------------------------------------------- */
 
-@media screen and (min-width: 800px) and (max-width: 1300px) {
-  .investors-containers img {
-    width: 60%;
-  }
-}
 
 
