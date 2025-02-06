@@ -26,6 +26,11 @@
 
 li {
   list-style: none;
+  z-index: 1;
+}
+
+li:hover {
+  transform: scale(2);
 }
 
 p {
@@ -81,7 +86,6 @@ main {
   height: 15px;
   background: var(--color1);
   border-radius: 50%;
-  z-index: 3;
   transition: 0.1s ease;
   mix-blend-mode: exclusion;
 }
@@ -95,7 +99,6 @@ main {
   height: 80px;
   background: var(--color3);
   border-radius: 50%;
-  z-index: 2;
   transition: 0.13s ease;
   mix-blend-mode: exclusion;
 }
@@ -107,7 +110,6 @@ main {
   height: 190px;
   background: var(--color4);
   border-radius: 50%;
-  z-index: 1;
   transition: 0.18s ease;
   mix-blend-mode: exclusion;
 }
