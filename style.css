@@ -103,12 +103,12 @@ main {
 .mousemove_small {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 15px;
-  height: 15px;
-  background: var(--color1);
+  width: 14px;
+  height: 14px;
+  background: #2128bd;
   border-radius: 50%;
   transition: 0.1s ease;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
 }
 
 /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, et luminosity. */
@@ -116,23 +116,23 @@ main {
 .mousemove_middle {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  background: var(--color3);
+  width: 100px;
+  height: 100px;
+  background: white;
   border-radius: 50%;
   transition: 0.13s ease;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
 }
 
 .mousemove_large {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: 190px;
-  height: 190px;
-  background: var(--color4);
+  width: 200px;
+  height: 200px;
+  background: rgb(41, 41, 41);
   border-radius: 50%;
   transition: 0.18s ease;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
 }
 
 .main-left {

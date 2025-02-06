@@ -12,36 +12,28 @@
 const mousemoveSmall = document.querySelector(".mousemove_small");
 const mousemoveMiddle = document.querySelector(".mousemove_middle");
 const mousemoveLarge = document.querySelector(".mousemove_large");
-// console.log(mousemoveSmall);
-// console.log(mousemoveMiddle);
-// console.log(mousemoveLarge);
-
-// On va chercher les liens de navigations pour les rendre cliquables:
-const helium = document.querySelector("h3");
-const navLink = document.querySelector("ul");
 
 // On va chercher des data sur l'event "mousemove"
 // window.addEventListener ('mousemove', (e) => {
 //   console.log(e);
 // });
+// A noter que JS reconnaît directement les "id", on ne sera pas obligé d'aller les récupérer dans le DOM, donc il vaut mieux identifier les éléments en HTML par des "id" !
+
+// window.addEventListener("mousemove", (e) => {
+//   mousemoveSmall.style.left = e.pageX + "px";
+//   mousemoveSmall.style.top = e.pageY + "px";
+//   mousemoveMiddle.style.left = e.pageX + "px";
+//   mousemoveMiddle.style.top = e.pageY + "px";
+//   mousemoveLarge.style.left = e.pageX + "px";
+//   mousemoveLarge.style.top = e.pageY + "px";
+// });
+
+// Optimisation du code avec "forEach":
+const allMouses = document.querySelectorAll(".mouse");
 
 window.addEventListener("mousemove", (e) => {
-  mousemoveSmall.style.left = e.pageX + "px";
-  mousemoveSmall.style.top = e.pageY + "px";
-  mousemoveMiddle.style.left = e.pageX + "px";
-  mousemoveMiddle.style.top = e.pageY + "px";
-  mousemoveLarge.style.left = e.pageX + "px";
-  mousemoveLarge.style.top = e.pageY + "px";
+  allMouses.forEach((mouse) => {
+    mouse.style.left = e.pageX + "px";
+    mouse.style.top = e.pageY + "px";
+  });
 });
-
-// Liens cliquables:
-// helium.addEventListener("mouseover", (event) => {
-//   event.target.style.color = "blue";
-
-//  });
-// helium.addEventListener("mouseout", (event) => {
-//   event.target.style.color = "white";
-
-//  });
-
-
